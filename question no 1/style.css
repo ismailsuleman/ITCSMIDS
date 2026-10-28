@@ -1,0 +1,57 @@
+body{
+    display: flex;
+    align-items: center;
+    background-color: aqua;
+}
+.parent{
+    height:80vh;
+    width: 50%;
+    background-color: antiquewhite;
+    align-items: center;
+    display: flex;
+    border-radius: 20px;
+    justify-content: center;
+    border: 2px solid black;
+    flex-direction: column;
+}
+
+
+.left{
+    height: 100vh;
+    width: 100px;
+    background-color: azure;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid black;
+    flex: 1;
+    gap: 30px;
+}
+.lower{
+    height: 100px;
+    width: 200px;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid black;
+    flex: 1;
+    gap: 20px;
+
+}
+
+
+.right{
+    margin-left: 250%;
+}
+
+
+button.hover{
+    background-color: black;
+    color: white;
+}
+
+#close:has(#checked) .parent{
+    display: none;
+}
+#close:has(#checked) .close{
+    display: block;
+}
+
